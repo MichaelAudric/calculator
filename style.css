@@ -62,3 +62,8 @@ button{
 .ops{
     display: flex;
 }
+
+.ops div{
+    display: flex;
+    flex-direction: column;
+}
