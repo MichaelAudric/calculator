@@ -42,6 +42,7 @@ body{
     flex: 1;
     margin: 30px;
     background-color: orangered;
+    border-radius: 50px;
 }
 
 button{
