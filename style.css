@@ -38,5 +38,6 @@ body{
 
 .nums div button{
     flex: 1;
+    margin: 30px;
 }
 
