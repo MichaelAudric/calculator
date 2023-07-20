@@ -6,4 +6,11 @@ body{
     margin : auto;
     width: 70%;
     height: 760px;
+    background-color: black;
 }
+
+/* .output{
+    background-color: orangered;
+    height: 60px;
+    margin : 10px;
+} */
