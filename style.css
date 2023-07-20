@@ -23,8 +23,11 @@ body{
 
 .nums{
     flex: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .ops{
     flex: 1;
 }
+
