@@ -31,3 +31,7 @@ body{
     flex: 1;
 }
 
+.nums div{
+    height: 160px;
+}
+
