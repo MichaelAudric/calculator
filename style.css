@@ -4,9 +4,10 @@ body{
 
 .container{
     margin : auto;
-    width: 70%;
+    width: 50%;
     height: 760px;
     background-color: black;
+    padding: 10px;
 }
 
 /* .output{
