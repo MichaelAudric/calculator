@@ -5,13 +5,13 @@ body{
 .container{
     margin : auto;
     width: 50%;
-    height: 760px;
+    height: 780px;
     background-color: black;
     padding: 10px;
 }
 
-/* .output{
+.output{
     background-color: orangered;
-    height: 60px;
-    margin : 10px;
-} */
+    height: 80px;
+}
+
