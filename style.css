@@ -19,3 +19,11 @@ body{
 .buttons{
     display: flex;
 }
+
+.nums{
+    flex: 2;
+}
+
+.ops{
+    flex: 1;
+}
