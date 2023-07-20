@@ -1,5 +1,7 @@
 body{
     background-color: darkgrey;
+    color: white;
+    font-weight: bold;
 }
 
 .container{
