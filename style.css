@@ -52,3 +52,9 @@ button{
     font-weight: bold;
     font-size: 30px;
 }
+
+.nums div button:hover:enabled{
+    background-color: orange;
+    border-radius: 40px;
+    border: 2px white solid;
+}
