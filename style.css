@@ -66,4 +66,12 @@ button{
 .ops div{
     display: flex;
     flex-direction: column;
+    flex: 1;
+}
+
+.ops div button{
+    flex: 1;
+    margin: 10px;
+    background-color: orangered;
+    border-radius: 50px;
 }
