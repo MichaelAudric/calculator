@@ -53,7 +53,7 @@ button{
     font-size: 30px;
 }
 
-.nums div button:hover:enabled{
+button:hover:enabled{
     background-color: orange;
     border-radius: 40px;
     border: 2px white solid;
@@ -75,3 +75,4 @@ button{
     background-color: orangered;
     border-radius: 50px;
 }
+
