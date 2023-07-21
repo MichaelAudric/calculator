@@ -14,6 +14,13 @@ const one = document.querySelector("#one");
 one.addEventListener("click", ()=>{
     curr += "1";
 });
-one.addEventListener("click", ()=>{
-    updateOutput();
+
+
+
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button)=>{
+    button.addEventListener("click",()=>{
+        updateOutput();
+    });
 });
