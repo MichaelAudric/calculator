@@ -14,16 +14,28 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach( (button) => {
 
-    button.addEventListener ( "click" , () => {
+    if (button.textContent != "del" && button.textContent != "=")
+    {
 
-        curr += button.textContent;
+        button.addEventListener ( "click" , () => {
 
-    });
+            curr += button.textContent;
+
+        });
+
+    }
 
 } );
 
+// del = document.querySelector("del");
+// del.removeEventListener("click",);
+
 buttons.forEach((button)=>{
+
     button.addEventListener("click",()=>{
+
         updateOutput();
+
     });
+
 });
