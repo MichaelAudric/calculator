@@ -89,7 +89,7 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach( (button) => {
 
-    if (button.textContent != "del" && button.textContent != "=")
+    if (button.textContent != "del" && button.textContent != "=" && button.textContent != "reset")
     {
 
         button.addEventListener ( "click" , () => {
