@@ -79,3 +79,9 @@ button:hover:enabled{
     border-radius: 50px;
 }
 
+#reset{
+    float: left;
+    background-color: orangered;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
