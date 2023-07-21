@@ -57,7 +57,6 @@ button{
 }
 
 button:hover:enabled{
-    background-color: orange;
     border-radius: 40px;
     border: 2px white solid;
 }
