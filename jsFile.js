@@ -175,6 +175,15 @@ eq.addEventListener ("click" , () => {
 });
 
 
+reset = document.querySelector("#reset");
+
+reset.addEventListener ("click" , () => {
+
+    curr = "0"; 
+
+});
+
+
 buttons.forEach((button)=>{
 
     button.addEventListener("click",()=>{
