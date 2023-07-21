@@ -18,14 +18,67 @@ function isNumber ( char )
 }
 
 
-// function getNextNum ( ind , first )
-// {
+function getNextNum ( ind )
+{
 
-//     let num = 0;
+    let num = 0.0;
+    let encountered_a_dot = false;
+    let floating_point = 10;
+    let check_empty = true;
 
+    while ( ind < curr.length && ( isNumber(curr[ind]) || (curr[ind]==='.') ))
+    {
 
+        check_empty = false;
+        if ( curr[ind] === '.' )
+        {
 
-// }
+            if ( encountered_a_dot )
+            {
+
+                throw("");
+
+            }
+
+            else
+            {
+
+                encountered_a_dot = true;
+
+            }
+
+        }
+
+        else
+        {
+
+            if (encountered_a_dot)
+            {
+
+                num += parseInt(curr[ind]) / floating_point;
+
+                floating_point *= 10;
+
+            }
+
+            else
+            {
+
+                num = num * 10 + parseInt(curr[ind]);
+
+            }
+
+        }
+
+        ind++;
+
+    }
+
+    if(check_empty) throw "";
+
+    return num;
+
+}
 
 
 updateOutput();
