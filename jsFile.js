@@ -1,5 +1,6 @@
 let curr = "0";
 
+
 function updateOutput()
 {
 
@@ -8,9 +9,30 @@ function updateOutput()
 
 }
 
+
+function isNumber ( char )
+{
+
+    return /^\d$/.test(char);
+
+}
+
+
+// function getNextNum ( ind , first )
+// {
+
+//     let num = 0;
+
+
+
+// }
+
+
 updateOutput();
 
+
 const buttons = document.querySelectorAll("button");
+
 
 buttons.forEach( (button) => {
 
@@ -27,7 +49,9 @@ buttons.forEach( (button) => {
 
 } );
 
+
 del = document.querySelector("#delete");
+
 del.addEventListener ( "click" , () => {
 
     curr = curr.slice(0,curr.length-1);
@@ -40,6 +64,30 @@ del.addEventListener ( "click" , () => {
     }
 
 } );
+
+
+// eq = document.querySelector ("#equals");
+
+// eq.addEventListener ("click" , () => {
+
+//     try{
+
+//         let num1;
+//         let operator;
+//         let num2;
+
+
+
+//     }
+
+//     catch(e){
+
+//         curr = "0";
+
+//     }
+
+// });
+
 
 buttons.forEach((button)=>{
 
