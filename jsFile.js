@@ -27,8 +27,19 @@ buttons.forEach( (button) => {
 
 } );
 
-// del = document.querySelector("del");
-// del.removeEventListener("click",);
+del = document.querySelector("#delete");
+del.addEventListener ( "click" , () => {
+
+    curr = curr.slice(0,curr.length-1);
+
+    if (curr === "")
+    {
+
+        curr = "0";
+
+    }
+
+} );
 
 buttons.forEach((button)=>{
 
