@@ -10,15 +10,18 @@ function updateOutput()
 
 updateOutput();
 
-const one = document.querySelector("#one");
-one.addEventListener("click", ()=>{
-    curr += "1";
-});
-
-
-
-
 const buttons = document.querySelectorAll("button");
+
+buttons.forEach( (button) => {
+
+    button.addEventListener ( "click" , () => {
+
+        curr += button.textContent;
+
+    });
+
+} );
+
 buttons.forEach((button)=>{
     button.addEventListener("click",()=>{
         updateOutput();
