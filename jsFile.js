@@ -76,7 +76,7 @@ function getNextNum ( ind )
 
     if(check_empty) throw "";
 
-    return num;
+    return [num,ind];
 
 }
 
@@ -119,27 +119,60 @@ del.addEventListener ( "click" , () => {
 } );
 
 
-// eq = document.querySelector ("#equals");
+eq = document.querySelector ("#equals");
 
-// eq.addEventListener ("click" , () => {
+eq.addEventListener ("click" , () => {
 
-//     try{
+    try{
 
-//         let num1;
-//         let operator;
-//         let num2;
+        let num1;
+        let operator;
+        let num2;
+        let ind = 0;
 
+        [num1,ind] = getNextNum(ind);
 
+        while (ind < curr.length)
+        {
 
-//     }
+            operator = curr[ind++];
 
-//     catch(e){
+            [num2,ind] = getNextNum(ind);
 
-//         curr = "0";
+            switch (operator)
+            {
 
-//     }
+                case "+":
+                    num1 += num2;
+                    break;
+                
+                case "-":
+                    num1 -= num2;
+                    break;
 
-// });
+                case "*":
+                    num1 *= num2;
+                    break;
+
+                case "/":
+                    num1 /= num2;
+                    break;
+
+            }
+
+        }
+
+        curr = num1;
+
+    }
+
+    catch(e){
+
+        curr = "0";
+
+    }
+
+});
 
 
 buttons.forEach((button)=>{
